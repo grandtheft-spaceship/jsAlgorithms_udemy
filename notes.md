@@ -59,3 +59,15 @@
     * Because we are looping through two different collections, that are most likely different sizes,
     * We would actually say that our algorithm has an `O(n) + O(m)` time complexity
       * This can be simplified down to `O(n + m)` time complexity, or even just `O(n)`
+
+### Is Palindrome -Intro
+
+* Takes a string as an argument
+  * **return true** if string is a palindrome
+  * **return false** if string is not a palindrome
+* A **palindrome is a word/phrase that is spelled the same both forwards and backwards**
+  * When determining a palindrome, we **ignore any punctuation characters**
+
+### Is Palindrome - Code
+
+* 
