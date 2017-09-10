@@ -19,8 +19,14 @@
   * For each number, if that number is divisible by 5, log `Buzz` instead of the number
   * For each number, if that number is divisible by both 3 and 5, log `FizzBuzz` instead of the numbers
 
-### Modulus Operator
+#### Modulus Operator
 
 * `%` returns remainder of number after number has been divided by another number
 
-### Fizz Buzz Code
+### Harmless Ransom Note
+
+* `function harmlessRansomNote(noteText, magazineText){};`
+  * `noteText` argument which represents the desired note we want to write (as a string)
+  * `magazineText`argument which represents the words available to make our note (as a string)
+
+* Representation of a ransom note made with words cut from various magazines
