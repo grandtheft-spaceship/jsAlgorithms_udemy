@@ -44,3 +44,18 @@
   * `0(n)` - linear runtime (*proportional runtime*)
   * `0(n^2)` - exponential runtime (*'O of n squared'*)
   * `O(log n)` - logarithmic runtime
+
+### Harmless Ransom Note - Code Part 1
+
+* For this exercise, we'll assume that both `noteText` and `magazineText` do not contain any punctuation and all the letters are lowercase
+
+### Harmless Ransom Note - Code Part 2
+### Harmless Ransom Note - Testing
+
+* The algorithm we wrote has a **linear time complexity - O(n)**
+  * Even though we are using *two loops* in our function, they are **not nested**, so our time complexity is **not exponential**
+  * The most important part of our algorithm, that determine our time complexity, are the two loops
+  * To be even more specific:
+    * Because we are looping through two different collections, that are most likely different sizes,
+    * We would actually say that our algorithm has an `O(n) + O(m)` time complexity
+      * This can be simplified down to `O(n + m)` time complexity, or even just `O(n)`
