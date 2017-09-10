@@ -25,8 +25,22 @@
 
 ### Harmless Ransom Note
 
+* Representation of a ransom note made with words cut from various magazines
 * `function harmlessRansomNote(noteText, magazineText){};`
   * `noteText` argument which represents the desired note we want to write (as a string)
   * `magazineText`argument which represents the words available to make our note (as a string)
+* The point of the algorithm is to determine if the `magazineText` available has enough words to create our `noteText`
+  * If the `magazineText` is enough, we will **return true**
+  * Else, we will **return false**
 
-* Representation of a ransom note made with words cut from various magazines
+### Time Complexity & Big O Notation
+
+* Used to classify how scalable an algorithm is
+* Allows you to estimate the *worst-case runtime* of an algorithm
+  * Basically, how long it'll take for the algorithm to complete based on its input size
+* Big O will let us know *how much slower an algo will run as its input size grows*
+* There are different types of runtimes, or *time-complexities*:
+  * `0(1)` - constant runtime
+  * `0(n)` - linear runtime (*proportional runtime*)
+  * `0(n^2)` - exponential runtime (*'O of n squared'*)
+  * `O(log n)` - logarithmic runtime
