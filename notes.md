@@ -92,3 +92,10 @@
   ```
   * Words are still in the same order, but each word itself has been reversed
   * Do not use the `array.reverse()` method
+
+### Reverse Array In Place - Intro
+
+* Take an array, reverses the same array, and returns that reversed array
+* We will be manipulating the array that is passed in
+* DO NOT push elements into a new array and return that array
+* DO NOT use `array.reverse()` method
