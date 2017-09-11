@@ -69,5 +69,15 @@
   * When determining a palindrome, we **ignore any punctuation characters**
 
 ### Is Palindrome - Code
+### Caesar Cipher - Intro
 
-* 
+* Takes two arguments, a **string** and a **number**
+  * The objective is to **shift every letter in the given string by the number that is passed in**
+  * Example:
+  ```
+    caesarCipher('zoo keeper', 2);
+    => 'bbq mggrgt'
+  ```
+  * NOTE: When getting near the end of the alphabet, you will loop to the beginning of the alphabet
+  * This algo can **also handle negative numbers**, meaning that you can **shift letters backwards in the alphabet as well as forward**
+  
