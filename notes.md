@@ -80,4 +80,15 @@
   ```
   * NOTE: When getting near the end of the alphabet, you will loop to the beginning of the alphabet
   * This algo can **also handle negative numbers**, meaning that you can **shift letters backwards in the alphabet as well as forward**
-  
+
+### Reverse Words - Intro
+
+* Takes a string and reverse every word in that string
+  * returns the new, reversed string
+  * Example:
+  ```
+    reverseWords('this is a string of words');
+    => 'siht si a gnirts fo sdrow'
+  ```
+  * Words are still in the same order, but each word itself has been reversed
+  * Do not use the `array.reverse()` method
