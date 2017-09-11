@@ -111,3 +111,18 @@
   * `meanMedianMode(array)`
     * This last function will call the other 3 functions and return the object with the 3 desired properties
 * **Functional Programming** is the practice of breaking down algos/code into separate functions that can be reused in multiple places
+
+### Two Sum - Intro
+
+* Takes 2 arguments, an array and a sum
+  * Returns every pair of numbers from the array that add up to the sum
+  * Example:
+  ```
+    twoSum([1,6,4,5,3,3], 7)
+    => result = [[1, 6], [3,4], [3,4]]
+  ```
+* Result should be an array of arrays
+* Any number in the array can be used in multiple pairs
+* Multiple ways of accomplishing result:
+  * `O(n^2)` time complexity -> *occurs when using nested loops*
+  * `O(n)` time complexity -> *occurs when using a hash table*
