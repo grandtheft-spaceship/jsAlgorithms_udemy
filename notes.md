@@ -99,3 +99,15 @@
 * We will be manipulating the array that is passed in
 * DO NOT push elements into a new array and return that array
 * DO NOT use `array.reverse()` method
+
+### Mean Median Mode - Intro
+
+* Take an array, filled with only numbers return an object with 3 properties: the **mean**, **median**, and **mode** values
+* We will create 4 separate functions for this algo
+  * `getMean(array)`
+    * *mean* - average of all the numbers // add them all up and divide by the number of numbers
+  * `getMedian(array)`
+  * `getMode(array)`
+  * `meanMedianMode(array)`
+    * This last function will call the other 3 functions and return the object with the 3 desired properties
+* **Functional Programming** is the practice of breaking down algos/code into separate functions that can be reused in multiple places
