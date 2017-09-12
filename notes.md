@@ -126,3 +126,16 @@
 * Multiple ways of accomplishing result:
   * `O(n^2)` time complexity -> *occurs when using nested loops*
   * `O(n)` time complexity -> *occurs when using a hash table*
+
+### Binary Search - Intro
+
+* Search for a given value inside of a list
+* List should be **sorted**
+* An essential algorithm to know because of it's wide-use range, popularity in interviews, and performance
+* Runs in `O(log n)` runtime, very performant
+* Can be written as a **recursive** function
+
+### Introduction to Recursion & the Call Stack
+
+* **Recursion** is when a function calls itself
+* Must have a **base case** and a **recursive case**
