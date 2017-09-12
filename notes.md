@@ -139,3 +139,36 @@
 
 * **Recursion** is when a function calls itself
 * Must have a **base case** and a **recursive case**
+
+### Fibonacci - Intro
+
+* A special sequence of numbers, called **the fibonacci sequence**
+* The sequence begins with `1, 1`
+  * Every number after that is the sum of the previous two numbers
+  * `1,1,2,3,5,8,13,21,34...`
+* A great practice for *recursion*
+* We will be **given a number, position, and we want to return the number at that position in the sequence***
+* Example:
+```
+  fibonacci(4)
+  => 3
+```
+* Hint:
+  * DOES NOT require a lot of code
+* NOTE:
+  * Recursive solution has a BAD time complexity - `O(2^n)` *O of 2 to the nth power*
+    * This is an **exponential time complexity**
+  * This is because every time we initially invoke the function, we end up invoking it twice more
+
+### Memoized Fibonacci - Intro
+
+```
+function fibMemo(position, cache) {}
+```
+* `position` - position of target number in fibonacci sequence
+* `cache` - an array used as memory
+* **Memoization**
+  * Check to see if number already exists in `cache`
+  * If number IS in `cache`, use that number
+  * If number IS NOT in `cache`, calculate it and put it in `cache` so it can be used in the future
+* Using this technique, our algorithm will have an `O(n)` *linear runtime*
