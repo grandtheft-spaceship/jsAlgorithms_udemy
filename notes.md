@@ -226,3 +226,34 @@ function fibMemo(position, cache) {}
       fifth iteration: [1,2,3,4,5,8] // don't need to compare 2 and 3 // Last 5 elements are sorted // This is a final check to make sure all elements are sorted
     ```
 * The **number of passes needed to complete sort an array is** `array.length - 1`
+
+### Merge Sort - Intro
+
+* Another widely-known algo and is heavily-used in technical interviews
+* **Take two, sorted arrays and combine them into one, sorted array**
+  * We will compare the first element of each array, and store the lesser value into a new array
+* Then, we will iterate up one array, while comparing the same, current value of the other array to the iterating values
+* Example:
+```
+  var a = [3,5,8,20]
+  var b = [1,2,12,17]
+  => [1,2,3,5,8,17,20]
+```
+* However, this works ONLY **if you start with two, sorted arrays**
+* In practice, we will **start with one, unsorted array**
+  * We will **break down the one, unsorted array, into multiple arrays that each have only 1 element**
+    * We do this because we know that **an array of 1 element is already sorted**
+  * We `mergeSort` our arrays of 1 element, so we are then left with arrays of 2 elements
+  * We continue `mergeSort()` until we are left with 1, sorted array
+* Our algo will be compromised of **two functions**
+  * `mergeSort(array)`
+    * Takes a single, unsorted array as its argument
+    * Splits the array into two halves
+  * `merge(array1, array2)`
+    * takes in 2, sorted arrays as parameters
+    * merges those sorted arrays into 1, sorted array
+    * returns the sorted array
+* NOTE: `mergeSort()` will be *recursively* calling itself
+* NOTE: **The splice() method returns the removed item(s) in an array and slice() method returns the selected element(s) in an array, as a new array object.**
+
+### Merge Sort - Follow-up Notes
