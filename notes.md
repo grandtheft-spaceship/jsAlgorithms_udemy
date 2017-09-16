@@ -172,3 +172,32 @@ function fibMemo(position, cache) {}
   * If number IS in `cache`, use that number
   * If number IS NOT in `cache`, calculate it and put it in `cache` so it can be used in the future
 * Using this technique, our algorithm will have an `O(n)` *linear runtime*
+
+### Sieve of Eratosthenes - Intro
+
+* Returns all prime numbers up to the given number
+  * NOTE: *A Prime Number can be divided evenly only by 1, or itself. And it must be a whole number greater than 1.*
+* Example:
+  ```
+  fuction sieveofEratosthenes(20)
+  => [2,3,5,7,11,13,17,19]
+  ```
+* To start, we begin with an array of numbers from `0..num`
+  * We then, **initially mark every number as a prime number**
+  * We will use the **indices of the array as num, and fill the array with** `true` **at the given index**
+  ```
+        [true, true, true, true, true...]
+  INDEX:   0     1     2     3     4
+  ```
+  * We will then iterate through the array and check if each number, *index*, is actually prime
+    * If the number is not actually prime, we will change it's value to `false`
+    ```
+          [false, false, true, true, true...]
+    INDEX:   0     1     2     3     4
+    ```
+  * First, we will mark `0` and `1` as false, because we already know they are not prime numbers
+  * As we continue to iterate through the array, **every number we mark as** `false`**, we will then mark all of its multiples as** `false` **as well**
+    * We know that **any multiple of a number cannot be prime**
+* For optimization:
+  * Instead of looping through every number in the array and marking their multiples as false, we can **stop looping at the square root of** `n` **because all non-prime numbers after the square root would have already been marked as false**
+* Lastly, we want to **return all prime numbers in an array**

@@ -10,3 +10,26 @@ function isPalindrome(string) {
   if (letters.join('') === letters.reverse().join('')) return true; // RETURN TRUE if letters array is same forwards as backwards
   else return false; // RETURN FALSE if letters array is NOT same forwards as backwards
 };
+
+///// NEW SOLUTION ///// NOT COMPLETE
+
+// function isPalindrome(string) {
+//   let charArray = string.split("");
+//   let lastIndex = charArray.length - 1;
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+//   let validLetters = new Array;
+//
+//   charArray.forEach(letter => {
+//     if (alphabet.indexOf(letter) !== -1) validLetters.push(letter);
+//   })
+//
+//   for (let i = 0; i < charArray.length; i++) {
+//     if (validLetters[i] === validLetters[lastIndex]) {
+//       lastIndex--;
+//       continue;
+//     } else {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
