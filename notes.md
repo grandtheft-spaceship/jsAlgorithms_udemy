@@ -201,3 +201,28 @@ function fibMemo(position, cache) {}
 * For optimization:
   * Instead of looping through every number in the array and marking their multiples as false, we can **stop looping at the square root of** `n` **because all non-prime numbers after the square root would have already been marked as false**
 * Lastly, we want to **return all prime numbers in an array**
+
+### Bubble Sort - Intro
+
+* Well-known sorting algorithm and is widely-used in technical interviews
+* Takes in an **array of numbers and returns the array sorted, from least to greatest**
+* Example:
+```
+  let nums = [5,3,8,2,1,4];
+  bubbleSort(nums);
+  => [1,2,3,4,5,8]
+```
+* The algorithm works by starting at the beginning of the array and looping through the entire array
+  * As we loop through the array, we compare each current number to the number to its right
+  * If the pairs are NOT in the correct order, we switch them around
+* It is called *bubble sort*, because the **larger numbers bubble up to the top of the array**
+* After the first loop-through, we will continually loop through the given array until it is completely sorted
+  * With each iteration, we can deduce that the last pairs are sorted according to the number of iterations
+    ```
+      first iteration: [3,5,2,1,4,8] // largest number bubbles to the end // Last element is sorted
+      second iteration: [3,2,1,4,5,8] // don't need to compare 5 and 8 // Last 2 elements are sorted
+      third iteration: [2,1,3,4,5,8] // don't need to compare 4 and 5 // Last 3 elements are sorted // the 4th element, 3, is sorted by chance, but we still need to check it
+      fourth iteration: [1,2,3,4,5,8] // don't need to compare 3 and 4 // Last 4 elements are sorted
+      fifth iteration: [1,2,3,4,5,8] // don't need to compare 2 and 3 // Last 5 elements are sorted // This is a final check to make sure all elements are sorted
+    ```
+* The **number of passes needed to complete sort an array is** `array.length - 1`
