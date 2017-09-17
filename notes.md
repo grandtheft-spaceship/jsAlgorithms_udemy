@@ -256,4 +256,21 @@ function fibMemo(position, cache) {}
 * NOTE: `mergeSort()` will be *recursively* calling itself
 * NOTE: **The splice() method returns the removed item(s) in an array and slice() method returns the selected element(s) in an array, as a new array object.**
 
-### Merge Sort - Follow-up Notes
+### Max Stock Profit - Intro
+
+* Takes an **array of prices** as its argument
+  * The array **represents the price of a single stock throughout the day**
+  * The algorithm will **determine what the max profit could have been made on that stock throughout the day**
+    * To do this, we will need to determine what was the **best price to buy** the stock at and what was the **best price to sell** the stock at
+    * Example:
+    ```
+      let prices = [32,46,26,38,40,48,42]
+      let buyPrice = 26
+      let sellPrice = 48
+      let result = sellPrice - buyPrice = 22
+    ```
+    * If NO profit is possible, `return -1`
+    * The `sellPrice` must happen AFTER the buyPrice
+      * *You can't sell the stock before you buy it ;)*
+    * A max profit of `0` is treated as any other max profit
+* Very useful algorithm to know because it is common to see this algo/variations of this algo on technical interviews
